@@ -20,6 +20,7 @@ export const validateTicTacboard = (boardObj, boardSize) => {
         isWon: false,
         winner: '-'
     }
+    // console.log(boardSize);
     // for row verification
     for(let i=1;i<=boardSize;i++){
         let arr = [];
@@ -28,15 +29,16 @@ export const validateTicTacboard = (boardObj, boardSize) => {
                 arr.push(boardObj[`${i}-${j}`])
             }
         }
+        // console.log(arr)
         arr.filter(a=> a!==null)
         let brr = [...new Set(arr)]
-        if(arr.length === boardSize && brr.length === 1){
+        if(arr.length == boardSize && brr.length === 1){
             result.isWon = true
             result.winner = brr[0]
             return result
         }
     }
-
+    // console.log(result)
     // for column verification
     for(let i=1;i<=boardSize;i++){
         let arr = [];
@@ -47,7 +49,7 @@ export const validateTicTacboard = (boardObj, boardSize) => {
         }
         arr.filter(a=> a!==null)
         let brr = [...new Set(arr)]
-        if(arr.length === boardSize && brr.length === 1){
+        if(arr.length == boardSize && brr.length === 1){
             result.isWon = true
             result.winner = brr[0]
             return result
@@ -63,7 +65,7 @@ export const validateTicTacboard = (boardObj, boardSize) => {
         }
         dia1.filter(a=> a!==null)
         let brr = [...new Set(dia1)]
-        if(dia1.length === boardSize && brr.length === 1){
+        if(dia1.length == boardSize && brr.length === 1){
             result.isWon = true
             result.winner = brr[0]
             return result
@@ -81,7 +83,7 @@ export const validateTicTacboard = (boardObj, boardSize) => {
         dia2.filter(a=> a!==null)
         let brr = [...new Set(dia2)]
         // console.log('arr')
-        if(dia2.length === boardSize && brr.length ===1){
+        if(dia2.length == boardSize && brr.length ===1){
             result.isWon = true
             result.winner = brr[0]
             return result

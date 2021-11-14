@@ -24,7 +24,7 @@ test('render tictac', () => {
 
     const boxesNew = tic.getAllByTestId('boxes')
     expect(boxesNew.length).toBe(16)
-    console.log(button)
+    // console.log(button)
     // fireEvent.change(input, {target: {value: 4}})
 
 })
