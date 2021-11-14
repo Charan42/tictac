@@ -2,9 +2,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import { 
     setBoxValue,
     setPlayer
-} from './tictacSlice'
-import { validateTicTacboard } from '../../util/helperFunctions'
-import { players } from '../../util/constants'
+} from './tictacSlice.js'
+import { validateTicTacboard } from '../../util/helperFunctions.js'
+import { players } from '../../util/constants.js'
 
 const Board = () => {
     const dispatch = useDispatch()

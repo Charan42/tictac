@@ -5,7 +5,7 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { store } from './app/store.js';
 import App from './App';
 
 Enzyme.configure({ adapter: new Adapter() });

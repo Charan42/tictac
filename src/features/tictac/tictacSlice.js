@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { getTicTacObject } from '../../util/helperFunctions'
-import { players } from '../../util/constants'
+import { getTicTacObject } from '../../util/helperFunctions.js'
+import { players } from '../../util/constants.js'
 
 const { X } = players
 

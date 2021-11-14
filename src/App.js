@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tictac } from './features/tictac/Tictac'
+import { Tictac } from './features/tictac/Tictac.js'
 import './App.css';
 
 function App() {

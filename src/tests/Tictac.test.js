@@ -1,10 +1,10 @@
 
 import React from "react";
-import { render, fireEvent, screen } from './renderUtil'
+import { render, fireEvent, screen } from './renderUtil.js'
 import { Provider } from "react-redux";
-import { store } from "../app/store";
+import { store } from "../app/store.js";
 
-import { Tictac } from "../features/tictac/Tictac";
+import { Tictac } from "../features/tictac/Tictac.js";
 import { getByLabelText } from "@testing-library/dom";
 
 test('render tictac', () => {
