@@ -3,10 +3,10 @@ import {  useDispatch } from 'react-redux'
 import { 
     setBoardSize,
     setPlayer
-} from './tictacSlice'
+} from './tictacSlice.js'
 import styles from '../tictac/Tictac.module.css';
-import Board from './Board'
-import { players } from '../../util/constants'
+import Board from './Board.js'
+import { players } from '../../util/constants.js'
 
 export const Tictac = () => {
     const { X } = players
